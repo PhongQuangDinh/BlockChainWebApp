@@ -18,7 +18,7 @@ def index():
     print(user)
     print(lender)
     print(amount)
-    return render_template('index.html') #+ result + render_template('temp.html')
+    return render_template('UI.html') #+ result + render_template('temp.html')
 
 def get_chain():
     chain_data = []
