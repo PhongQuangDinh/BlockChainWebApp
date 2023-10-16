@@ -18,7 +18,8 @@ def index():
     print(user)
     print(lender)
     print(amount)
-    return render_template('UI.html') #+ result + render_template('temp.html')
+    rep = user + " bought " + amount + " of Phong's crypto coins from " + lender + " ,You fool :))"
+    return render_template('UI.html',value_suggest=rep) #+ result + render_template('temp.html')
 
 def get_chain():
     chain_data = []
