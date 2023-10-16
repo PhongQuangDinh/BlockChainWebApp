@@ -19,6 +19,7 @@ def index():
     print(lender)
     print(amount)
     rep = str(user) + " bought " + str(amount) + " of Phong's crypto coins from " + str(lender) + " ,You fool :))"
+    if user == None or lender == None or amount == None: rep = ""
     return render_template('UI.html',value_suggest=rep) #+ result + render_template('temp.html')
 
 def get_chain():
